@@ -2,7 +2,6 @@
 header('Content-Type: application/json');
 require 'koneksi.php';
 
-// Kaprodi HANYA melihat pengajuan yang sudah diproses admin (status 'menunggu_kaprodi')
 $query = "SELECT p.*, u.nama_lengkap, u.nim FROM pengajuan_surat p 
           JOIN users u ON p.id_mahasiswa = u.id_user 
           WHERE p.status = 'menunggu_kaprodi' 

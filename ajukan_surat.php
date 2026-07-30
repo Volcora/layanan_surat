@@ -1,5 +1,4 @@
 <?php
-// (Opsional) Matikan error reporting agar peringatan PHP tidak merusak JSON jika ada kesalahan kecil
 error_reporting(0); 
 
 header('Content-Type: application/json');

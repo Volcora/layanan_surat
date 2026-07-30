@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 require 'koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['file_final'])) {
-    $id_pengajuan = $_POST['id_pengajuan'];
+$id_pengajuan = intval($_POST['id_pengajuan']);
     
     $nama_file = time() . "_ACC_" . basename($_FILES["file_final"]["name"]);
     $target_dir = "uploads/final/";
