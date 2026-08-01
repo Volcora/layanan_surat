@@ -40,5 +40,4 @@ if ($result) {
 }
 
 // Tampilkan output dalam format JSON
-echo json_encode($response);
-?>
+echo json_encode($response);?>
