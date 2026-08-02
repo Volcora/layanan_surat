@@ -16,6 +16,5 @@ if ($result && $result->num_rows > 0) {
     }
     echo json_encode(array("sukses" => true, "data" => $data));
 } else {
-    // Kembalikan array kosong jika tidak ada antrean
     echo json_encode(array("sukses" => true, "data" => array()));
 }?>

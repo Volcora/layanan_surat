@@ -31,7 +31,6 @@ if ($role == 'admin') {
     }
 }
 
-// Gabungkan query dasar dan urutkan dari yang paling baru
 $query = $base_query . $kondisi . " ORDER BY p.tanggal_pengajuan DESC";
 
 $result = $koneksi->query($query);
@@ -48,7 +47,7 @@ if ($result) {
     } else {
         $response['sukses'] = true; 
         $response['pesan'] = "Tidak ada antrean surat.";
-        $response['data'] = array(); // Kirim array kosong agar RecyclerView di Android tidak error
+        $response['data'] = array(); 
     }
 } else {
     $response['sukses'] = false;

@@ -6,11 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id_pengajuan = $_POST['id_pengajuan'];
     $catatan = $_POST['catatan_revisi'];
 
-    // Ubah status pengajuan kembali ke revisi_admin
     $query_update = "UPDATE pengajuan_surat SET status = 'revisi_admin' WHERE id_pengajuan = $id_pengajuan";
     
     if ($koneksi->query($query_update) === TRUE) {
-        // Simpan catatan revisi ke riwayat terakhir
         $query_catatan = "UPDATE riwayat_draf SET catatan_revisi = '$catatan' WHERE id_pengajuan = $id_pengajuan ORDER BY versi DESC LIMIT 1";
         $koneksi->query($query_catatan);
 

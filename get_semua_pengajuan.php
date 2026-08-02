@@ -26,7 +26,6 @@ if ($result) {
         $response['data'] = array();
     }
 } else {
-    // Jika terjadi kesalahan pada sintaks SQL
     $response['sukses'] = false;
     $response['pesan'] = "Gagal mengambil data: " . $koneksi->error;
 }

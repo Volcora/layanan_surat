@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = ""; // Kosongkan jika menggunakan default XAMPP
+$pass = "";
 $db   = "db_surat_mahasiswa";
 
 $koneksi = new mysqli($host, $user, $pass, $db);

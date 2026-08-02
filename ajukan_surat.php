@@ -11,7 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $keterangan = $_POST['keterangan'];
     $status = 'diajukan'; 
 
-    // Query diperbaiki: Typo dihapus dan kolom 'keterangan' ditambahkan kembali dengan tanda kutip
     $query = "INSERT INTO pengajuan_surat (id_mahasiswa, jenis_surat, no_telepon, keterangan, status, tanggal_pengajuan) 
               VALUES ('$id_mahasiswa', '$jenis_surat', '$no_telepon', '$keterangan', '$status', NOW())";
 
