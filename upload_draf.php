@@ -46,5 +46,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['file_word'])) {
     }
 } else {
     echo json_encode(array("sukses" => false, "pesan" => "Data atau file tidak valid."));
-}
-?>
+}?>

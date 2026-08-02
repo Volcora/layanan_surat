@@ -54,5 +54,4 @@ if ($result) {
     $response['pesan'] = "Gagal mengambil data: " . $koneksi->error;
 }
 
-echo json_encode($response);
-?>
+echo json_encode($response);?>

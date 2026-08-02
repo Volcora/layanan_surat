@@ -44,5 +44,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         echo json_encode(["sukses" => false, "pesan" => "File ACC dari Kaprodi tidak ditemukan"]);
     }
-}
-?>
+}?>
